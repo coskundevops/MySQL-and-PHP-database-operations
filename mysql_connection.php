@@ -17,4 +17,28 @@ catch (PDOException $e) {
 echo "".$e->getMessage()."";
 //exception sıradışı demek yani $e değişkeni hata olursa mesaj olarak döndürecek
 }
+
+// 2. versiyon
+/*
+
+$host="localhost"; 
+//eğer uzak bağlantı olsa ip adresi girilecek
+$dbname="test";
+$user="root";
+$pass="";
+$char="utf8mb4"; //karkter önmeli databese verilerini çözümler yoksa hata verir
+
+try{
+  $pdo= new PDO("mysql:host=$host;dbname=$dbname;charset=$char",$user,$pass);
+
+  //phph data object(pdo) bağlantı kurmak için :"mysql:host=$host;dbname=$dbname;charset=$char" 
+  //$user,$pass) bu kısm veritabanına giriş için
+   echo "connection is succesful";
+   //pdo başarılı ise echo çalışır
+   
+}catch(PDOException $e){
+echo $e->getMessage();
+//exception sıradışı durum demek $e ise artık sıra dışı durum tesbit değişkeni
+}
+*/
 ?>
