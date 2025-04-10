@@ -1,1 +1,3 @@
 Thanks to these ready codes, you can easily perform operations in the database.
+
+-bu hazır kodlar sayesinde kolayca veritabanında işlemler yapa bilirsiniz.
